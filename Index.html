@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#100d1c">
+<title>Myneosha × Linch — Команды</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;background:#0d0b14;color:#f4efff;
+  font-family:Arial,sans-serif;line-height:1.6
+}
+header{
+  text-align:center;padding:55px 18px 35px;
+  background:radial-gradient(ellipse at top,#462477 0%,#171024 48%,#0d0b14 100%)
+}
+h1{font-size:clamp(27px,6vw,44px);margin:0;color:#fff}
+header p{color:#d2c4f4}
+.badge{
+  display:inline-block;border:1px solid #a77aff;
+  border-radius:30px;padding:5px 13px;color:#d8bdff;
+  font-size:12px;letter-spacing:2px;margin-bottom:14px
+}
+main{max-width:850px;margin:auto;padding:20px}
+.search{
+  width:100%;padding:15px;border-radius:12px;
+  background:#191523;border:1px solid #403151;
+  color:white;font-size:16px;outline:none;margin-bottom:24px
+}
+.search:focus{border-color:#b18aff}
+section{
+  background:#15121e;border:1px solid #30253f;
+  border-radius:16px;padding:20px;margin-bottom:18px
+}
+h2{font-size:20px;margin-top:0;color:#c9a7ff}
+.command{
+  padding:12px 0;border-bottom:1px solid #292332
+}
+.command:last-child{border-bottom:0}
+code{
+  color:#e0caff;background:#261c35;
+  border-radius:6px;padding:4px 7px;font-size:14px
+}
+.desc{color:#bcb4c9;font-size:14px;margin-top:7px}
+footer{text-align:center;padding:30px;color:#8e849e;font-size:13px}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<header>
+  <div class="badge">OFFICIAL COMMAND GUIDE</div>
+  <h1>MYNEOSHA × LINCH</h1>
+  <p>📚 Справочник команд бота</p>
+  <p>Общение · Браки · Анкеты · Развлечения · Администрирование</p>
+</header>
+
+<main>
+<input id="search" class="search" placeholder="🔎 Найти команду..." autocomplete="off">
+
+<section class="category">
+<h2>💍 Браки и отношения</h2>
+<div class="command"><code>брак</code> <div class="desc">Ответь на сообщение участника, чтобы предложить брак.</div></div>
+<div class="command"><code>браки</code> <div class="desc">Посмотреть информацию о своём браке.</div></div>
+<div class="command"><code>браки все</code> <div class="desc">Посмотреть список браков в группе и их длительность.</div></div>
+<div class="command"><code>развод</code> <div class="desc">Расторгнуть свой брак.</div></div>
+</section>
+
+<section class="category">
+<h2>👤 Анкета и профиль</h2>
+<div class="command"><code>кто я</code> <div class="desc">Посмотреть информацию о себе.</div></div>
+<div class="command"><code>кто ты</code> <div class="desc">Посмотреть информацию об участнике.</div></div>
+<div class="command"><code>моя анкета</code> <div class="desc">Открыть свою анкету.</div></div>
+<div class="command"><code>профиль</code> <div class="desc">Посмотреть профиль.</div></div>
+<div class="command"><code>мой пол ...</code> <div class="desc">Указать пол в анкете.</div></div>
+<div class="command"><code>мой город ...</code> <div class="desc">Указать город в анкете.</div></div>
+<div class="command"><code>описание</code> <div class="desc">Работа с описанием профиля.</div></div>
+</section>
+
+<section class="category">
+<h2>🎭 Роли и персонажи</h2>
+<div class="command"><code>роли</code> <div class="desc">Посмотреть доступные роли.</div></div>
+<div class="command"><code>персонажи</code> <div class="desc">Посмотреть список персонажей.</div></div>
+<div class="command"><code>роль</code> <div class="desc">Посмотреть информацию о роли.</div></div>
+<div class="command"><code>мояроль</code> <div class="desc">Посмотреть свою роль.</div></div>
+<div class="command"><code>освободить</code> <div class="desc">Освободить занятую роль, если она доступна для освобождения.</div></div>
+</section>
+
+<section class="category">
+<h2>🏆 Активность и награды</h2>
+<div class="command"><code>топ</code> <div class="desc">Посмотреть рейтинг участников.</div></div>
+<div class="command"><code>топдень</code> <div class="desc">Рейтинг за день.</div></div>
+<div class="command"><code>топнеделя</code> <div class="desc">Рейтинг за неделю.</div></div>
+<div class="command"><code>топмесяц</code> <div class="desc">Рейтинг за месяц.</div></div>
+<div class="command"><code>топгод</code> <div class="desc">Рейтинг за год.</div></div>
+<div class="command"><code>реп</code> <div class="desc">Команда репутации.</div></div>
+<div class="command"><code>монеты</code> <div class="desc">Посмотреть монеты.</div></div>
+</section>
+
+<section class="category">
+<h2>🎮 Общение и информация</h2>
+<div class="command"><code>помощь</code> <div class="desc">Открыть справку бота.</div></div>
+<div class="command"><code>правила</code> <div class="desc">Посмотреть правила чата.</div></div>
+<div class="command"><code>название</code> <div class="desc">Команда для работы с названием группы.</div></div>
+<div class="command"><code>чат ... ссылка</code> <div class="desc">Команда для работы со ссылкой на чат.</div></div>
+<div class="command"><code>+правила</code> <div class="desc">Настроить правила чата.</div></div>
+<div class="command"><code>прощание</code> <div class="desc">Настроить сообщения при выходе участников.</div></div>
+</section>
+
+<section class="category">
+<h2>🛡️ Администрирование</h2>
+<div class="command"><code>мут</code> <div class="desc">Ограничить возможность писать участнику.</div></div>
+<div class="command"><code>снятьмут</code> <div class="desc">Снять ограничение на отправку сообщений.</div></div>
+<div class="command"><code>бан</code> <div class="desc">Заблокировать участника в группе.</div></div>
+<div class="command"><code>разбан</code> <div class="desc">Снять блокировку участника.</div></div>
+<div class="command"><code>кик</code> <div class="desc">Удалить участника из группы.</div></div>
+<div class="command"><code>варн</code> <div class="desc">Выдать предупреждение.</div></div>
+<div class="command"><code>варны</code> <div class="desc">Посмотреть предупреждения участника.</div></div>
+<div class="command"><code>снятьварны</code> <div class="desc">Снять предупреждения.</div></div>
+<div class="command"><code>закреп</code> <div class="desc">Закрепить сообщение в чате.</div></div>
+<div class="command"><code>открепить</code> <div class="desc">Открепить сообщение.</div></div>
+<div class="command"><code>очистить</code> <div class="desc">Команда очистки сообщений.</div></div>
+</section>
+
+<section class="category">
+<h2>ℹ️ Важно</h2>
+<p class="desc">Доступность некоторых команд зависит от прав участника, настроек группы и версии бота. Для точного списка используй команду «помощь» в самом боте.</p>
+<p class="desc">Это начальная версия справочника. Список необходимо сверить со всеми обработчиками бота перед публикацией как полного официального списка.</p>
+</section>
+</main>
+
+<footer>MYNEOSHA × LINCH · COMMAND GUIDE</footer>
+
+<script>
+const search = document.getElementById('search');
+search.addEventListener('input', () => {
+  const q = search.value.toLowerCase().trim();
+  document.querySelectorAll('.category').forEach(section => {
+    let visible = false;
+    section.querySelectorAll('.command').forEach(item => {
+      const match = item.textContent.toLowerCase().includes(q);
+      item.classList.toggle('hidden', !match);
+      if (match) visible = true;
+    });
+    section.classList.toggle('hidden', !visible && q !== '');
+  });
+});
+</script>
+</body>
+</html>
